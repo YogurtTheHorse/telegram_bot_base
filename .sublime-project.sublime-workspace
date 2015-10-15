@@ -1,0 +1,1191 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"last",
+				"last_update"
+			],
+			[
+				"las",
+				"last_update"
+			],
+			[
+				"i",
+				"import"
+			],
+			[
+				"coll",
+				"collection"
+			],
+			[
+				"comm",
+				"commands_list"
+			],
+			[
+				"classes",
+				"classes_list"
+			],
+			[
+				"class",
+				"classes_list"
+			],
+			[
+				"dbn",
+				"db_name"
+			],
+			[
+				"atta",
+				"attachments"
+			],
+			[
+				"audio",
+				"audios"
+			],
+			[
+				"mes",
+				"messages"
+			],
+			[
+				"mess",
+				"message_id"
+			],
+			[
+				"messa",
+				"message"
+			],
+			[
+				"did",
+				"didyou"
+			],
+			[
+				"предм",
+				"предмет"
+			],
+			[
+				"photo",
+				"photo_attach"
+			],
+			[
+				"se",
+				"server"
+			],
+			[
+				"comma",
+				"commands_help"
+			],
+			[
+				"less",
+				"LESSONS"
+			],
+			[
+				"fo",
+				"forward_messages"
+			],
+			[
+				"send",
+				"send_spam"
+			],
+			[
+				"sch",
+				"SCHEDULE"
+			],
+			[
+				"has",
+				"hash_code"
+			],
+			[
+				"p",
+				"py"
+			],
+			[
+				"message",
+				"message_trimmed"
+			],
+			[
+				"try",
+				"try	Try/Except"
+			],
+			[
+				"__",
+				"__init__"
+			],
+			[
+				"url",
+				"urllib"
+			],
+			[
+				"prin",
+				"printArr"
+			],
+			[
+				"fun",
+				"function	function"
+			],
+			[
+				"Ki",
+				"King"
+			],
+			[
+				"cent",
+				"centX"
+			],
+			[
+				"pr",
+				"prev"
+			],
+			[
+				"cool",
+				"coolMan"
+			],
+			[
+				"take",
+				"takeKatarina"
+			],
+			[
+				"cho",
+				"chooseReplic"
+			],
+			[
+				"cham",
+				"champsCount"
+			],
+			[
+				"champs",
+				"cahmps"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"ind",
+				"ind_min"
+			],
+			[
+				"ind_",
+				"ind_max"
+			],
+			[
+				"day",
+				"day_to_string"
+			],
+			[
+				"res",
+				"res_max"
+			],
+			[
+				"da",
+				"days"
+			],
+			[
+				"days",
+				"days_in_month"
+			],
+			[
+				"string_",
+				"string_to_mont"
+			],
+			[
+				"holida",
+				"holiday"
+			],
+			[
+				"four",
+				"fourth_root"
+			],
+			[
+				"pri",
+				"printMessage"
+			],
+			[
+				"c",
+				"chooseReplic"
+			],
+			[
+				"yo",
+				"your"
+			],
+			[
+				"N",
+				"None"
+			],
+			[
+				"Get",
+				"GetValue"
+			],
+			[
+				"toke",
+				"tokens"
+			],
+			[
+				"beg",
+				"beginChar"
+			],
+			[
+				"token",
+				"Token"
+			],
+			[
+				"vector",
+				"vector	std::vector"
+			],
+			[
+				"To",
+				"Token"
+			],
+			[
+				"Token",
+				"TokenType"
+			],
+			[
+				"le",
+				"Lexer"
+			],
+			[
+				"char",
+				"charPosition"
+			],
+			[
+				"enu",
+				"enum	Enumeration"
+			],
+			[
+				"file",
+				"filepath"
+			],
+			[
+				"arg",
+				"argv"
+			],
+			[
+				"r",
+				"rf"
+			],
+			[
+				"ma",
+				"main	main()"
+			],
+			[
+				"KEY_VOL",
+				"KEY_VOLUME_LOWER"
+			],
+			[
+				"KEY_",
+				"KEY_NEXT"
+			],
+			[
+				"rig",
+				"_right	var"
+			],
+			[
+				"Flx",
+				"FlxButton	flixel.ui"
+			],
+			[
+				"Pla",
+				"PlayState	class"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "from mongo_help import MongoHelper\nimport logging\nimport telegram\n\nbot = telegram.Bot(token='135242172:AAFT9NNNApAgHPjEBrGh3BucWKScJZSt8QY')\nmongo = MongoHelper()\n\nprint (\"Bot info: \", bot.getMe())\n\nlast_update = mongo['global']['last'] or 0\nprint('Last message id:', last_update)\n\nwhile True:\n	updates = bot.getUpdates(offset=last_update)\n\n	print ([u.message.text for u in updates])\n\n	if len(updates):\n		update(updates)\n\n		last_update = updates[-1].update_id + 1\n		mongo['global']['last'] = last_update",
+			"file": "main.py",
+			"file_size": 503,
+			"file_write_time": 130893148843863142,
+			"settings":
+			{
+				"buffer_size": 503,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "commands/start.py",
+			"settings":
+			{
+				"buffer_size": 125,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/yegorf1/Dev/botto.git/crons/commands/commands_help.py",
+			"settings":
+			{
+				"buffer_size": 3070,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mongo_help.py",
+			"settings":
+			{
+				"buffer_size": 1183,
+				"line_ending": "Unix",
+				"name": "import pymongo"
+			}
+		},
+		{
+			"file": "/home/yegorf1/Dev/botto.git/crons/commands/notification.py",
+			"settings":
+			{
+				"buffer_size": 1056,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/yegorf1/Dev/botto.git/crons/echoBot.py",
+			"settings":
+			{
+				"buffer_size": 3426,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/C++ Make.sublime-build",
+					""
+				],
+				[
+					"Packages/User/C++ Make.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/User/C++ Make.sublime-build",
+					"Launch"
+				]
+			],
+			[
+				"Packages/User/C++ Make.sublime-build",
+				"Launch"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "repl",
+		"selected_items":
+		[
+			[
+				"repl",
+				"SublimeREPL: Python"
+			],
+			[
+				"REP",
+				"SublimeREPL: Python"
+			],
+			[
+				"replpy",
+				"SublimeREPL: Python"
+			],
+			[
+				"pyth",
+				"Set Syntax: Python3"
+			],
+			[
+				"replpyt",
+				"SublimeREPL: Python"
+			],
+			[
+				"inp",
+				"Package Control: Install Package"
+			],
+			[
+				"insp",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"markw",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"preview",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"view",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"instp",
+				"Package Control: Install Package"
+			],
+			[
+				"instalp",
+				"Package Control: Install Package"
+			],
+			[
+				"oridestr",
+				"Origami: Destroy Pane on the Right"
+			],
+			[
+				"origam crea",
+				"Origami: Create Pane on the Right"
+			],
+			[
+				"origame",
+				"Origami: Destroy Pane Above"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"java",
+				"Javatar: Operations..."
+			],
+			[
+				"11",
+				"Snippet: $1.begin(), $1.end()"
+			],
+			[
+				"set c++1",
+				"Set Syntax: C++11"
+			],
+			[
+				"isntal",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"package lis",
+				"Package Control: List Packages"
+			],
+			[
+				"forma",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"set syntax c++",
+				"Set Syntax: C++"
+			],
+			[
+				"set syn c++",
+				"Set Syntax: C++"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instP",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"haxe",
+				"Haxe: New Class"
+			],
+			[
+				"build",
+				"Haxe: Choose Build Target"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 406.0,
+		"history":
+		[
+			"import os; os.environ['PATH']",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/yegorf1/Dev/vk_resend_bot",
+		"/home/yegorf1/Dev/vk_resend_bot/commands"
+	],
+	"file_history":
+	[
+		"/home/yegorf1/Dev/vk_resend_bot/commands/__init__.py",
+		"/home/yegorf1/Dev/vk_resend_bot/commands/recreate_init.py",
+		"/home/yegorf1/Dev/botto.git/crons/commands/__init__.py",
+		"/home/yegorf1/Dev/botto.git/crons/commands/help.py",
+		"/home/yegorf1/Dev/botto.git/crons/commands/commands_help.py",
+		"/home/yegorf1/Dev/botto.git/crons/echoBot.py",
+		"/home/yegorf1/Dev/botto.git/crons/commands/audio.py",
+		"/home/yegorf1/Dev/botto.git/crons/commands/task.py",
+		"/home/yegorf1/tmp/я сделяль вектор шаблон.svg",
+		"/home/yegorf1/Dev/botto.git/crons/start.sh",
+		"/home/yegorf1/Dev/botto.git/crons/commands/schedule.py",
+		"/home/yegorf1/Dev/botto.git/crons/commands/recursion.py",
+		"/home/yegorf1/Dev/botto.git/crons/commands/yulia.py",
+		"/home/yegorf1/Dev/C++/3d_cam/main.py",
+		"/home/yegorf1/Dev/Python/a.py",
+		"/home/yegorf1/tmp/ПЗ_20151009.txt.txt",
+		"/home/yegorf1/Dev/botto.git/crons/commands/notification.py",
+		"/home/yegorf1/Dev/botto.git/crons/commands/wolframmath.py",
+		"/home/yegorf1/Dev/botto.git/crons/commands/status.py",
+		"/usr/local/lib/python3.4/dist-packages/wolframalpha/__init__.py",
+		"/home/yegorf1/Dev/botto.git/crons/some.xml",
+		"/usr/lib/python3.4/_strptime.py",
+		"/home/yegorf1/Dev/botto.git/requirements.txt",
+		"/usr/local/lib/python3.4/dist-packages/vk/api.py",
+		"/home/yegorf1/Dev/botto.git/.openshift/cron/minutely/min.sh",
+		"/home/yegorf1/Dev/botto.git/.openshift/cron/minutely/ticktock.sh",
+		"/home/yegorf1/Dev/botto.git/commands/schedule.py",
+		"/home/yegorf1/Dev/botto.git/commands/__init__.py",
+		"/home/yegorf1/Dev/botto.git/.openshift/cron/hourly/.gitignore",
+		"/home/yegorf1/.config/sublime-text-3/Packages/User/EchoBot.sublime-build",
+		"/media/yegorf1/1AE63181E6315E67/Dev/botto.git/requirements.txt",
+		"/media/yegorf1/13F51A9C0B70B0FC/Users/yegorf1/Desktop/python-seryiza-bot-011/requirements.txt",
+		"/home/yegorf1/Dev/CSharp/monotools/Tools/MGCB/MGCB.csproj",
+		"/home/yegorf1/Dev/CSharp/Circles/Circles/Field.cs",
+		"/home/yegorf1/Dev/CSharp/Circles/Circles/Content/Content.mgcb",
+		"/home/yegorf1/Dev/CSharp/Circles/Circles/Content/Roboto.spritefont",
+		"/home/yegorf1/Dev/CSharp/Circles/Circles/Circles.csproj",
+		"/home/yegorf1/tmp/roll.sh",
+		"/home/yegorf1/Dev/yegorf1.ru/index.html",
+		"/home/yegorf1/tmp/adb_logcat_dump.txt",
+		"/home/yegorf1/Dev/cool-retro-term/fallout.json",
+		"/home/yegorf1/games/fallout3/winecfg",
+		"/home/yegorf1/games/fallout3/desktop_gen",
+		"/home/yegorf1/games/fallout3/wine_prefix/dosdevices/d:/wine_distrib/bin/winecfg",
+		"/home/yegorf1/tmp/PennerDoubleAnimation_cs.txt",
+		"/home/yegorf1/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/yegorf1/Dev/algos/README.md",
+		"/home/yegorf1/Dev/algos/dividers_count.cpp",
+		"/home/yegorf1/.config/sublime-text-3/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
+		"/home/yegorf1/Dev/garados/core/assets/items/needle_sword.json",
+		"/home/yegorf1/Dev/garados/core/assets/items/bow_thread.json",
+		"/home/yegorf1/programms/popcorn_time/install",
+		"/home/yegorf1/Dev/CSharp/Irony_2013_12_12/Irony_All.2012.sln",
+		"/home/yegorf1/Dev/codefoces/567/c_smart.cpp",
+		"/home/yegorf1/Dev/codefoces/567/c.cpp",
+		"/home/yegorf1/Dev/summer_schoole/r41-2/c.cpp",
+		"/home/yegorf1/Dev/garados/core/assets/places/karen_house.lua",
+		"/home/yegorf1/Dev/garados/desktop/saves/NewGame.sav",
+		"/home/yegorf1/Dev/garados/desktop/saves/6543.sav",
+		"/home/yegorf1/Dev/summer_schoole/r41-1/d.cpp",
+		"/home/yegorf1/Dev/summer_schoole/r41-1/d.cp",
+		"/home/yegorf1/Dev/summer_schoole/r41-1/d.cpp#include <iostream>",
+		"/home/yegorf1/.cache/.fr-i1IVhi/day1/aplusb/aplusb_sp_dpr.dpr",
+		"/home/yegorf1/Dev/garados/core/assets/quests/first_road.json",
+		"/home/yegorf1/games/dontstarve-104735/app_config.json",
+		"/home/yegorf1/Dev/garados/core/assets/places/karen_road.lua",
+		"/home/yegorf1/Dev/garados/core/assets/dialogues/introduction.lua",
+		"/home/yegorf1/Dev/garados/core/assets/scenes/first.lua",
+		"/home/yegorf1/Dev/summer_schoole/r14-1/b.py",
+		"/home/yegorf1/Dev/summer_schoole/r14-1/c.py",
+		"/home/yegorf1/Dev/ny/src/lexer/makefile",
+		"/home/yegorf1/Dev/ny/src/lexer/lexer.lex",
+		"/home/yegorf1/Dev/ny/src/makefile",
+		"/home/yegorf1/Dev/ny/makefile",
+		"/home/yegorf1/games/dontstarve-104735/dontstarve.sh",
+		"/home/yegorf1/Dev/ny/lexer/lexer.lex",
+		"/home/yegorf1/Dev/ny/CMakeLists.txt",
+		"/home/yegorf1/Dev/ny/lexer/CMakeLists.txt",
+		"/home/yegorf1/Dev/C++/bad_news_sir/makefile",
+		"/home/yegorf1/Dev/ny/lexer/sample.lex",
+		"/home/yegorf1/Dev/ny/lexer/a.out",
+		"/home/yegorf1/Dev/summer_schoole/zaoch/a.py",
+		"/home/yegorf1/Dev/summer_schoole/zaoch/b.py",
+		"/home/yegorf1/Dev/summer_schoole/zaoch/d.py",
+		"/home/yegorf1/Dev/summer_schoole/zaoch/e.py",
+		"/home/yegorf1/Dev/summer_schoole/zaoch/b.cpp",
+		"/home/yegorf1/.cache/.fr-hL6nmT/problems/serve.cfg",
+		"/home/yegorf1/Dev/what_if/website/content/what-if/083-star-sand.md",
+		"/home/yegorf1/Dev/Untitled-RPG-game/core/assets/scenes/first.lua",
+		"/home/yegorf1/Dev/Untitled-RPG-game/core/assets/dialogues/introduction.lua",
+		"/home/yegorf1/.cache/.fr-IfxFMr/index.html",
+		"/home/yegorf1/Dev/Untitled-RPG-game/core/assets/scenes/test.lua",
+		"/home/yegorf1/Dev/summer_schoole/training_contest_2/d.cpp",
+		"/home/yegorf1/Dev/summer_schoole/training_contest_2/j.py",
+		"/home/yegorf1/Dev/summer_schoole/training_contest_2/c.cpp",
+		"/home/yegorf1/Dev/Untitled-RPG-game/desktop/saves/1.sav",
+		"/home/yegorf1/.cache/.fr-Bx5LMf/problems/seq/problem.xml",
+		"/home/yegorf1/.cache/.fr-E3fzOq/problems/conquest/tests/07",
+		"/home/yegorf1/.cache/.fr-3jkuJe/problems/conquest/tests/07",
+		"/home/yegorf1/Dev/Untitled-RPG-game/core/src/com/frostcloud/garados/LuaDefaults.java",
+		"/home/yegorf1/Dev/Untitled-RPG-game/core/assets/quests/first_road.json",
+		"/home/yegorf1/.cache/.fr-aJzJjC/problems/conquest/tests/07.a",
+		"/home/yegorf1/.cache/.fr-loXUZ1/problems/conquest/tests/07",
+		"/home/yegorf1/Dev/summer_schoole/sort_and_dp/a.cpp",
+		"/home/yegorf1/Dev/summer_schoole/sort_and_dp/b.cpp",
+		"/home/yegorf1/games/df/PyLNP.user",
+		"/home/yegorf1/games/df/PyLNP.json",
+		"/home/yegorf1/Dev/summer_schoole/arrays/f.py",
+		"/home/yegorf1/Dev/Untitled-RPG-game/core/src/com/frostcloud/garados/character/Buff.java",
+		"/home/yegorf1/Dev/Untitled-RPG-game/core/src/com/frostcloud/garados/character/equipment/Item.java",
+		"/home/yegorf1/tmp/untitled.js",
+		"/home/yegorf1/tmp/2",
+		"/home/yegorf1/tmp/1",
+		"/home/yegorf1/tmp/rocketgo/c2runtime.js",
+		"/home/yegorf1/Dev/Untitled-RPG-game/core/assets/jsons/characters/martinas.json",
+		"/home/yegorf1/Dev/Untitled-RPG-game/core/assets/jsons/menu.json",
+		"/home/yegorf1/ascii art.txt",
+		"/home/yegorf1/SLIMEASCII.txt",
+		"/home/yegorf1/Skeleton.txt",
+		"/home/yegorf1/Skeleton.1.txt",
+		"/home/yegorf1/Dev/Untitled-RPG-game/core/assets/jsons/characters/kinda.json",
+		"/home/yegorf1/slime.txt",
+		"/home/yegorf1/Dev/Untitled-RPG-game/core/.classpath",
+		"/home/yegorf1/tmp/untitled",
+		"/home/yegorf1/.wine/dosdevices/c:/Program Files (x86)/Black Shell Games/SanctuaryRPG/Data/mainsave.dat",
+		"/home/yegorf1/Random skeleton.txt.lnk",
+		"/home/yegorf1/Sword_Small.txt",
+		"/home/yegorf1/Dev/C++/NyaLanguage/nya"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 94.0,
+		"where_history":
+		[
+			"",
+			"<current file>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			".value",
+			"MongoClient",
+			"name",
+			"f",
+			"res",
+			"trim",
+			"D",
+			"d",
+			"ќ",
+			"Ќ",
+			"’",
+			"‘",
+			"Љ",
+			"dстати",
+			"Љ",
+			"Ь",
+			"Ђ",
+			"ђ",
+			"€",
+			"ѓ",
+			"‹",
+			"џ",
+			"Џ",
+			"„",
+			"‡",
+			"–",
+			"Ю",
+			"Я",
+			"—",
+			"Њ",
+			"…",
+			"‚",
+			"Ћ",
+			" ",
+			"n",
+			" ",
+			"print(",
+			"msg",
+			"m",
+			".",
+			":",
+			"сам с",
+			"\")\n		commands_help.send_message(bot, m[3], \"",
+			"'",
+			"m[3]",
+			"SENDER",
+			"sender",
+			"SENDER",
+			"sender",
+			"SENDER",
+			"sender",
+			"SENDER",
+			"    ",
+			" ",
+			":",
+			"#",
+			":",
+			"Constants.FIELD_HEIGHT",
+			"Constants.FIELD_WIDTH",
+			"backeaseIn",
+			"easeIn",
+			"easeInBac",
+			"ease",
+			"easy",
+			"scal",
+			"brig",
+			"screenCurvature",
+			"scree",
+			"glow",
+			"jit",
+			"noi",
+			"System.err",
+			"ru.yegorf1.xkcdviewer.Main",
+			">",
+			"-source",
+			"\n  - Returns:",
+			"\n",
+			"- Returns:",
+			"- Complex:",
+			"\n",
+			"```C++",
+			"lcm",
+			"c",
+			"C",
+			"    ```",
+			"```C++",
+			"	",
+			"    ",
+			"`",
+			"```C++",
+			"    ",
+			"            ",
+			"           ",
+			"          ",
+			"         ",
+			"        ",
+			"       ",
+			"      ",
+			"     ",
+			"    ",
+			"- Example use:",
+			"- Returns:",
+			"\n\n- Returns:",
+			"Return",
+			"  ",
+			"        ",
+			"       ",
+			"      ",
+			"     ",
+			"    ",
+			"   ",
+			"  ",
+			"Return",
+			"return",
+			"Return",
+			"Args",
+			"complex",
+			"Complex",
+			"- Args\n\n  *",
+			":",
+			". `",
+			". ",
+			".",
+			"Hp",
+			"’",
+			"{ ",
+			"’",
+			"…"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"'sender'",
+			"	",
+			"  ",
+			"	",
+			"    ",
+			"\\t",
+			"\"Katarina: ",
+			"\"",
+			"\"Girl:",
+			"Player: {",
+			",",
+			"\"Girl: ",
+			" {",
+			" ",
+			"\\n",
+			"",
+			" ",
+			"note_R",
+			"note_C",
+			"note_b",
+			"note_a",
+			"note_g",
+			"note_f",
+			"note_e",
+			"note_d",
+			"note_c",
+			""
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "main.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 503,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								503,
+								503
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"incomplete_sync": null,
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "commands/start.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 125,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11,
+								11
+							],
+							[
+								44,
+								44
+							],
+							[
+								87,
+								87
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/yegorf1/Dev/botto.git/crons/commands/commands_help.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3070,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								402,
+								402
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 294.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "mongo_help.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1183,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								815,
+								815
+							]
+						],
+						"settings":
+						{
+							"auto_name": "import pymongo",
+							"incomplete_sync": null,
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 168.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/yegorf1/Dev/botto.git/crons/commands/notification.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1056,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								605,
+								605
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/home/yegorf1/Dev/botto.git/crons/echoBot.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3426,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								933,
+								933
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 210.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.CppYCM.2":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 241.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.markdown":
+	{
+		"height": 94.0
+	},
+	"output.sftp":
+	{
+		"height": 106.0
+	},
+	"pinned_build_system": "Packages/Python 3/Python3.sublime-build",
+	"project": ".sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"test",
+				"test.ny"
+			],
+			[
+				"nya",
+				"nya"
+			],
+			[
+				"",
+				"test.ny"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 253.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
